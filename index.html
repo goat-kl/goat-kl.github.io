@@ -20,7 +20,7 @@
 			<img src="googlelogo.png" />
 		</div>
 		<form id="searchForm" action="" onsubmit="return validateForm()"  method="post">
-			<input id="s" class="search-bar" type="search" autofocus x-webkit-speech/>
+			<input id="s" value="Hope you feel better. Try searching for goat" class="search-bar" type="search" autofocus x-webkit-speech/>
 			<br>
 			<input id="submitbutton" type="submit" value="Google Search"/>
 		</form>
@@ -40,9 +40,6 @@
 	</div>
 	<script>
 
-		window.onload = function(){
-			alert("Hope you feel better. Try searching \"goat\"");
-		}
 
 		function validateForm() {
 			var x = document.forms["searchForm"]["s"].value;
